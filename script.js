@@ -1,5 +1,12 @@
 async function getpokemon(e){
-    if(pokemon_index.value %1 == 0) {
+    if (pokemon_index.value <= 0) {
+        pokemon_card.innerHTML=`
+        <p class="error"> 
+        Ooops!!! Not valid entry, Enter a number greater than zero..  
+        </p>
+        `
+    }
+    else if(pokemon_index.value %1 == 0) {
         rotated_value = pokemon_index.value % 1125;
         console.log(pokemon_index);
         var response= await fetch(`https://pokeapi.co/api/v2/pokemon/${rotated_value}`);
