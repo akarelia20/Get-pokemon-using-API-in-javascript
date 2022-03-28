@@ -1,5 +1,5 @@
 # Get-pokemon-using-API-in-javascript
-What does application is about ? 
+What is this application about ? 
 This appliaction allows a user to get a pokemon based on any random selection of input number. 
 
 Strategy : 
